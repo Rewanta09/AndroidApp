@@ -153,6 +153,19 @@ dependencies {
 4. APK location: app/build/outputs/apk/debug/
 ```
 
+### Option 2: Command Line
+```bash
+# Make gradlew executable (Linux/Mac)
+chmod +x gradlew
+
+# Build debug APK
+./gradlew assembleDebug
+
+# Build release APK
+./gradlew assembleRelease
+```
+
+---
 
 ## ▶️ Running the Application
 
@@ -170,7 +183,20 @@ dependencies {
 </td>
 <td width="50%">
 
+### 💻 Command Line
+```bash
+# Install and run
+./gradlew installDebug
 
+# Build + Install
+./gradlew assembleDebug installDebug
+```
+
+</td>
+</tr>
+</table>
+
+---
 
 ## 📱 Device Setup
 
@@ -241,6 +267,43 @@ Login Screen → Dashboard Screen → Details Screen
 </tr>
 </table>
 
+## 🐛 Troubleshooting
+
+<details>
+<summary>🔧 Common Issues & Solutions</summary>
+
+### Gradle Sync Failed
+```bash
+# Solutions:
+1. Check internet connection
+2. File → Invalidate Caches and Restart
+3. ./gradlew clean
+```
+
+### Build Errors
+```bash
+# Clean and rebuild:
+./gradlew clean
+./gradlew build
+```
+
+### Network Issues
+```
+✅ Check device internet connectivity
+✅ Verify API endpoints
+✅ Check network permissions in manifest
+```
+
+### Hilt Compilation Errors
+```
+✅ Ensure @HiltAndroidApp on Application class
+✅ Check all Hilt annotations are correct
+✅ Verify kapt plugin is applied
+```
+
+</details>
+
+---
 
 ## 💡 Architecture Overview
 
@@ -308,3 +371,9 @@ Login Screen → Dashboard Screen → Details Screen
 ---
 
 
+
+
+<div align="center">
+  <h3>🎯 Built with ❤️ using Android Studio and Kotlin</h3>
+  <p><strong>Happy Coding! 🚀</strong></p>
+</div>
