@@ -36,39 +36,64 @@ An Android application that demonstrates user authentication, entity dashboard v
 
 MyFragment/
 ├── app/
-│   ├── manifests/
-│   │   └── AndroidManifest.xml
-│   ├── java/
-│   │   └── com.example.mygragment/
-│   │       ├── RecyclerView/
-│   │       │   └── [RecyclerView adapter and related classes]
-│   │       ├── ApiClient.kt
-│   │       ├── AuthApi.kt
-│   │       ├── AuthResponse.kt
-│   │       ├── Credentials.kt
-│   │       ├── DashboardApi.kt
-│   │       ├── DashboardResponse.kt
-│   │       ├── Entity.kt
-│   │       ├── FragmentA.kt
-│   │       ├── FragmentB.kt
-│   │       ├── FragmentC.kt
-│   │       ├── MainActivity.kt
-│   │       └── User.kt
-│   ├── res/
-│   │   ├── drawable/
-│   │   ├── layout/
-│   │   │   ├── activity_main.xml
-│   │   │   ├── fragment_a.xml
-│   │   │   ├── fragment_b.xml
-│   │   │   ├── fragment_c.xml
-│   │   │   └── item_entity.xml
-│   │   ├── menu/
-│   │   ├── mipmap/
-│   │   ├── navigation/
-│   │   │   └── nav_graph.xml
-│   │   ├── values/
-│   │   └── xml/
-│   └── build.gradle.kts
-│
-├── build.gradle.kts (Project-level)
+│ ├── manifests/
+│ │ └── AndroidManifest.xml
+│ ├── java/
+│ │ └── com.example.mygragment/
+│ │ ├── RecyclerView/
+│ │ │ └── [Adapters, ViewHolders]
+│ │ ├── ApiClient.kt
+│ │ ├── AuthApi.kt
+│ │ ├── AuthResponse.kt
+│ │ ├── Credentials.kt
+│ │ ├── DashboardApi.kt
+│ │ ├── DashboardResponse.kt
+│ │ ├── Entity.kt
+│ │ ├── FragmentA.kt
+│ │ ├── FragmentB.kt
+│ │ ├── FragmentC.kt
+│ │ ├── MainActivity.kt
+│ │ └── User.kt
+│ ├── res/
+│ │ ├── layout/
+│ │ │ ├── activity_main.xml
+│ │ │ ├── fragment_a.xml
+│ │ │ ├── fragment_b.xml
+│ │ │ ├── fragment_c.xml
+│ │ │ └── item_entity.xml
+│ │ ├── navigation/
+│ │ │ └── nav_graph.xml
+│ │ ├── values/
+│ │ └── drawable/, mipmap/, menu/, xml/
+├── build.gradle.kts (Project)
 └── README.md
+
+---
+
+## 🔌 Dependencies
+
+All dependencies are managed via Gradle Kotlin DSL:
+
+```kotlin
+// Hilt for dependency injection
+implementation("com.google.dagger:hilt-android:<version>")
+kapt("com.google.dagger:hilt-android-compiler:<version>")
+
+// Retrofit for networking
+implementation("com.squareup.retrofit2:retrofit:<version>")
+implementation("com.squareup.retrofit2:converter-gson:<version>")
+
+// Coroutines
+implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:<version>")
+
+// Jetpack components
+implementation("androidx.navigation:navigation-fragment-ktx:<version>")
+implementation("androidx.navigation:navigation-ui-ktx:<version>")
+implementation("androidx.recyclerview:recyclerview:<version>")
+implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:<version>")
+implementation("androidx.lifecycle:lifecycle-livedata-ktx:<version>")
+
+// Testing
+testImplementation("junit:junit:<version>")
+testImplementation("org.mockito:mockito-core:<version>")
+
