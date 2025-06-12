@@ -33,41 +33,7 @@ An Android application that demonstrates user authentication, entity dashboard v
 ---
 
  Project Structure 
-
- MyFragment/
-├── app/
-│ ├── manifests/
-│ │ └── AndroidManifest.xml
-│ ├── java/
-│ │ └── com/example/mygragment/
-│ │ ├── RecyclerView/
-│ │ │ └── [Adapters, ViewHolders]
-│ │ ├── ApiClient.kt
-│ │ ├── AuthApi.kt
-│ │ ├── AuthResponse.kt
-│ │ ├── Credentials.kt
-│ │ ├── DashboardApi.kt
-│ │ ├── DashboardResponse.kt
-│ │ ├── Entity.kt
-│ │ ├── FragmentA.kt
-│ │ ├── FragmentB.kt
-│ │ ├── FragmentC.kt
-│ │ ├── MainActivity.kt
-│ │ └── User.kt
-│ ├── res/
-│ │ ├── layout/
-│ │ │ ├── activity_main.xml
-│ │ │ ├── fragment_a.xml
-│ │ │ ├── fragment_b.xml
-│ │ │ ├── fragment_c.xml
-│ │ │ └── item_entity.xml
-│ │ ├── navigation/
-│ │ │ └── nav_graph.xml
-│ │ ├── values/
-│ │ └── drawable/, mipmap/, menu/, xml/
-├── build.gradle.kts (Project)
-└── README.md
-
+<pre lang="text"> ## 📁 Project Structure ``` MyFragment/ ├── app/ │ ├── manifests/ │ │ └── AndroidManifest.xml │ ├── java/ │ │ └── com/example/mygragment/ │ │ ├── RecyclerView/ │ │ │ └── [Adapters, ViewHolders] │ │ ├── ApiClient.kt │ │ ├── AuthApi.kt │ │ ├── AuthResponse.kt │ │ ├── Credentials.kt │ │ ├── DashboardApi.kt │ │ ├── DashboardResponse.kt │ │ ├── Entity.kt │ │ ├── FragmentA.kt │ │ ├── FragmentB.kt │ │ ├── FragmentC.kt │ │ ├── MainActivity.kt │ │ └── User.kt │ ├── res/ │ │ ├── layout/ │ │ │ ├── activity_main.xml │ │ │ ├── fragment_a.xml │ │ │ ├── fragment_b.xml │ │ │ ├── fragment_c.xml │ │ │ └── item_entity.xml │ │ ├── navigation/ │ │ │ └── nav_graph.xml │ │ ├── drawable/ │ │ ├── mipmap/ │ │ ├── menu/ │ │ ├── values/ │ │ └── xml/ │ └── build.gradle.kts ├── build.gradle.kts (Project) └── README.md ``` </pre>
 
 ---
 
