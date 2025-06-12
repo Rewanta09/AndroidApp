@@ -1,4 +1,4 @@
-# MyFragment Android Application
+#  Android Application
 
 <div align="center">
   <h3>🚀 Modern Android App with MVVM Architecture</h3>
