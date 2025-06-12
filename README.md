@@ -32,14 +32,14 @@ An Android application that demonstrates user authentication, entity dashboard v
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 MyFragment/
 ├── app/
 │ ├── manifests/
 │ │ └── AndroidManifest.xml
 │ ├── java/
-│ │ └── com.example.mygragment/
+│ │ └── com/example/mygragment/
 │ │ ├── RecyclerView/
 │ │ │ └── [Adapters, ViewHolders]
 │ │ ├── ApiClient.kt
@@ -67,6 +67,7 @@ MyFragment/
 │ │ └── drawable/, mipmap/, menu/, xml/
 ├── build.gradle.kts (Project)
 └── README.md
+
 
 ---
 
